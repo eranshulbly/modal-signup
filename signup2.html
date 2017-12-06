@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/signup2.css">
+</head>
+
+<body>
+<h2>Modal Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <div class="input-group form-group fx ">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Username">  
+      </div>
+      <div class="input-group form-group fx ">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email">  
+      </div>
+      <div class="form-group fx input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+       <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+     </div>
+     <div class="form-group fx input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+       <input type="password" class="form-control" id="pwd" placeholder="Confirm password">
+     </div>
+      <button type="submit" class="btn btn-default fx">Register</button>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="signup2.js"></script>
+
+</body>
+</html>
